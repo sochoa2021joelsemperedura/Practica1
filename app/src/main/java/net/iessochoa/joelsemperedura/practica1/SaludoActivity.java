@@ -15,5 +15,7 @@ public class SaludoActivity extends AppCompatActivity {
 
         tvSaludo=findViewById(R.id.tvSaludo);
         String saludo=getIntent().getStringExtra(EXTRA_NOMBRE);
+
+        tvSaludo.setText(saludo);
     }
 }
