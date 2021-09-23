@@ -11,14 +11,15 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
     EditText etNombre;
     Button btnOk;
+    Button btnHora;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //obteniendo los elementos de la clase R
-        etNombre=findViewById(R.id.etNombre);
-        btnOk=findViewById(R.id.btnOk);
+        iniciaViews();
+
 
         btnOk.setOnClickListener(v -> {
             Intent intent= new Intent(MainActivity.this,SaludoActivity.class);
@@ -26,5 +27,19 @@ public class MainActivity extends AppCompatActivity {
 
             startActivity(intent);
         });
+
+        btnHora.setOnClickListener(v -> enviaHora());
+
     }
+
+    private void iniciaViews() {
+        etNombre=findViewById(R.id.etNombre);
+        btnOk=findViewById(R.id.btnOk);
+        btnHora=findViewById(R.id.btnHora);
+    }
+
+    private void enviaHora() {
+        //RELLENAR
+    }
+
 }

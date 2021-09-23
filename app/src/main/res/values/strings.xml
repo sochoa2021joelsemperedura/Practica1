@@ -3,4 +3,6 @@
     <string name="nombre">Nombre</string>
     <string name="Hola">Hola </string>
     <string name="stMiNombre">Joel Sempere Dura</string>
+    <string name="button">Button</string>
+    <string name="stHora">Dime la hora</string>
 </resources>

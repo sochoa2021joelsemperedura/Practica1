@@ -31,4 +31,16 @@
         android:layout_height="wrap_content"
         android:text="@android:string/ok" />
 
+    <Button
+        android:id="@+id/btnHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stHora" />
+
+    <TextView
+        android:id="@+id/tvMiNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/stMiNombre" />
+
 </LinearLayout>
