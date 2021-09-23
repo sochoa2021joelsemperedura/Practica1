@@ -6,4 +6,5 @@
     <string name="stMiNombre">Joel Sempere Dura</string>
     <string name="button">Button</string>
     <string name="stHora">Dime la hora</string>
+    <string name="string_formateada">La hora a la que has pulsado el botón es %1$s y mi nombre es %2$s</string>
 </resources>
