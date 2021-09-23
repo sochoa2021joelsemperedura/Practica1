@@ -22,7 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name" />
+        android:minHeight="48dp"
+        android:text="@string/stMiNombre"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/btnOk"
