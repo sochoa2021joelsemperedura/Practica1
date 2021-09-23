@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class SaludoActivity extends AppCompatActivity {
+    //Sera el valor que enviaremos a la actividad main para ver el nombre
     public static final String EXTRA_NOMBRE="SaludoActivity.NOMBRE";
     TextView tvSaludo;
     @Override
@@ -16,6 +17,6 @@ public class SaludoActivity extends AppCompatActivity {
         tvSaludo=findViewById(R.id.tvSaludo);
         String saludo=getIntent().getStringExtra(EXTRA_NOMBRE);
 
-        tvSaludo.setText(saludo);
+        tvSaludo.setText(getString(R.string.Hola)+saludo);
     }
 }

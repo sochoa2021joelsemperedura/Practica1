@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        //obteniendo los elementos de la clase R
         etNombre=findViewById(R.id.etNombre);
         btnOk=findViewById(R.id.btnOk);
 
