@@ -27,11 +27,13 @@ public class MainActivity extends AppCompatActivity {
         //obteniendo los elementos de la clase R
         iniciaViews();
 
-
+        /**
+         * Lambda que crea un intent que comunica la MainActivity con SaludoActivity y le pasa el texto introducido por el usuario al hacer clic en el boton con la etiqueta btnOk
+         */
         btnOk.setOnClickListener(v -> {
             Intent intent= new Intent(MainActivity.this,SaludoActivity.class);
             intent.putExtra(SaludoActivity.EXTRA_NOMBRE,etNombre.getText().toString());
-
+            //Inicia la actividad intent
             startActivity(intent);
         });
 
