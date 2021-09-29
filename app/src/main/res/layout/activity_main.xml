@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="@string/stMiNombre" />
+        android:text="@string/StMensajeIntroduceNombre" />
 
     <Button
         android:id="@+id/btnOk"
