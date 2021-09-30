@@ -36,15 +36,21 @@ public class MainActivity extends AppCompatActivity {
             //Inicia la actividad intent
             startActivity(intent);
         });
-
+        /**
+         * Lambda que crea un intent que comunica la MainActivity con HoraActivity y le pasa el metodo enviaHora al hacer clic.
+         */
         btnHora.setOnClickListener(v -> {
             Intent intent = new Intent(MainActivity.this, HoraActivity.class);
             intent.putExtra(HoraActivity.EXTRA_HORA,enviaHora());
+            //Inicia intent
             startActivity(intent);
         });
 
     }
 
+    /**
+     * Metodo que relaciona los atributos de la clase con sus views correspondientes, de esta forma puedo trabajar con ellas.
+     */
     private void iniciaViews() {
         etNombre=findViewById(R.id.etNombre);
         btnOk=findViewById(R.id.btnOk);
@@ -52,6 +58,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
+    /**
+     * Metodo que nos devuelve la hora actual en forma de String
+     */
     private String enviaHora() {
         DateTimeFormatter df = DateTimeFormatter.ofPattern("HH:mm:ss");
         String hora=df.format(LocalDateTime.now());
